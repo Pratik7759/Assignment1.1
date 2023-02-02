@@ -1,0 +1,176 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/banner.webp);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 200px;
+  height: 40px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  /* position : static | relative | absolute | sticky | fixed */
+}
+.nav-links ul li a {
+  color: whitesmoke; /*it is used for the color of the link*/
+  text-decoration: none; /* it will remove any by default style from the link*/
+  font-size: 13px; /*it is used to set the size of the font*/
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%; /* here if we provide width more tha 0% then it will show the border with some width under the link*/
+  height: 2px; /* it will show the vertical length of the border when we hover it*/
+  background: black; /* it will show the color of the border*/
+  display: block; /*it is used to show black line at the bottom of the link*/
+  margin: auto; /* it will show the distance between link and the border*/
+  transition: 0.5s; /* transition effect is used for the effect of border line */
+}
+.nav-links ul li:hover::after {
+  width: 100%; /* here i provided 100% width when we hover the link then it will show the border with 100% width*/
+}
+.text-box {
+  width: 90%; /*width is representing the horizontal space taken by the class*/
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 62px;
+}
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+}
+.hero-btn:hover {
+  border: 1px solid #f44336;
+  background: teal;
+  transition: 1s;
+}
+
+nav .fa {
+  display: none;
+}
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    background: teal;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -210px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+
+/* ----------course------------- */
+.course {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #777;
+  line-height: 22px;
+  padding: 10px;
+}
+.row {
+  display: flex;
+  margin-top: 5%;
+  justify-content: space-between;
+}
+.course-col {
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.course-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 700px) {
+  .row {
+    /* flex-direction: column; */
+    flex-flow: column wrap;
+  }
+}
+/*
+/* properties of css,flex,positions:inline,block,display block ,inline block,span,b,i,sticky and fixed ,justify content*/
+/* position : static | relative | absolute | sticky | fixed */
+
+/* <!-- display flex used to align vertical element into single row and justify-content is used to set the position of the element into the flex , ex-left,center,right--> */
+/* <!-- difference between inline-block and flex --> */
+/* <!-- position:relative ------ position the element relative to its normal position and will leave a gap at its normal position --> */
+/* <!-- position:absolute ------ position the element relative to the position of its first parents position --> */
+/* <!-- position:fixed ------  if we fixed the position of any block or div then it does not move or leave its position while we scroll our screen--> */
+/* <!-- position:fixed ------ position the element relative to the browser window &  it always stays in the same place even if the page is scrolled --> */
+/* <!-- position:sticky ------ it sticks relative to our scroll--> */
+/* <!-- position:static(default) --> */
+/* <!-- placeholder ------ specifies a short hint that describes the expected value of a input field / textarea --> */
+/* <!-- hover ------ hover describes the act of moving a mouse pointer over a clickable object --> */
+/* <!-- focus ------ It is generally triggered when the user clicks or taps on an element or selects it with the keyboard's Tab key. --> */
+/* <!-- nth-child ------ The :nth-child() CSS pseudo-class matches elements based on their position among a group of siblings. --> */
+/* <!-- nth-child(even) ------ even represents the position that has to be changed or designed --> */
+/* <!-- before and after ------  It is often used to add cosmetic content to an element with the content property --> */
+/* <!-- inline ------ Inline elements are those which only occupy the space bounded by the tags defining the element, instead of breaking the flow of the content.Ex:- <span> --> */
+/* <!-- Block-level ------ it will take the entire width even if we write a single word --> */
+/* flex-wrap , wrap-reverse and flex-flow */
+/* flex-wrap is used to handle the overflow of data */
+/* flex-flow is the shorthand for flex-wrap and flex-direction */

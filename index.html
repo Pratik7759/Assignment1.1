@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Example of internal CSS -->
+    <style>
+      .hero-btn {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 1px solid #fff;
+        padding: 12px 34px;
+        font-size: 13px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/logo.svg" /></a>
+        <div class="nav-links" id="nav-links">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT US</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>We design, develop and modernize software applications.</h1>
+        <p>
+          making Website is now one of the easiest thing in the world. You just
+          need to learn HTML, CSS, Javascript and you are good to go.
+        </p>
+        <a href="" class="hero-btn"> visit us to know more </a>
+      </div>
+    </section>
+    <!-- ---------course---------- -->
+
+    <section class="course">
+      <h1>Courses We Offer</h1>
+      <p>
+        A queries are a popular technique for delivering a tailored style sheet
+        to desktops, laptops, tablets, an
+      </p>
+      <div class="row">
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>
+            The result of the query is true if the specified media type matches
+            the type of device the document is being displayed on and all
+            expressions in the media query are true. When a media query is true,
+            the corresponding style sheet or style rules are applied, following
+            the normal cascading rules.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Graduation</h3>
+          <p>
+            The result of the query is true if the specified media type matches
+            the type of device the document is being displayed on and all
+            expressions in the media query are true. When a media query is true,
+            the corresponding style sheet or style rules are applied, following
+            the normal cascading rules.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Post Graduation</h3>
+          <p>
+            The result of the query is true if the specified media type matches
+            the type of device the document is being displayed on and all
+            expressions in the media query are true. When a media query is true,
+            the corresponding style sheet or style rules are applied, following
+            the normal cascading rules.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------javascript-------- -->
+    <script>
+      var navLinks = document.getElementById("nav-links");
+      function showmenu() {
+        navLinks.style.right = "0";
+      }
+      function hidemenu() {
+        navLinks.style.right = "-210px";
+      }
+    </script>
+  </body>
+</html>
